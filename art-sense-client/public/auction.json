@@ -1,0 +1,112 @@
+[
+  {
+ 
+    "artist": "Rafiqun Nabi",
+    "title": "Untitled",
+    "media": "Oil on Canvas",
+    "size": "12 in x 12 in",
+    "year": 2019,
+    "price": "BDT 7000",
+    "stockCode": "RN001",
+    "photoUrl": "https://i.ibb.co.com/mt4BHpQ/auction1.jpg"
+  },
+  {
+  
+    "artist": "Zainul Abedin",
+    "title": "River Scenery",
+    "media": "Watercolor on Paper",
+    "size": "18 in x 24 in",
+    "year": 1958,
+    "price": "BDT 12000",
+    "stockCode": "ZA002",
+    "photoUrl": "https://i.ibb.co.com/pvRnVK8/auction2.jpg"
+  },
+  {
+   
+    "artist": "Shilpacharya Zainul Abedin",
+    "title": "Fishing Net",
+    "media": "Charcoal on Paper",
+    "size": "20 in x 15 in",
+    "year": 1948,
+    "price": "BDT 9000",
+    "stockCode": "ZA003",
+    "photoUrl": "https://i.ibb.co.com/M5G9gzJ/auction3.jpg"
+  },
+  {
+   
+    "artist": "Novera Ahmed",
+    "title": "Abstract Sculpture",
+    "media": "Bronze",
+    "size": "15 in x 10 in",
+    "year": 1971,
+    "price": "BDT 15000",
+    "stockCode": "NA004",
+    "photoUrl": "https://i.ibb.co.com/dBxjdNY/auction4.jpg"
+  },
+  {
+   
+    "artist": "Quamrul Hassan",
+    "title": "Bengal Beauty",
+    "media": "Acrylic on Canvas",
+    "size": "16 in x 20 in",
+    "year": 1985,
+    "price": "BDT 11000",
+    "stockCode": "QH005",
+    "photoUrl": "https://i.ibb.co.com/Vpbvsc9/auction5.jpg"
+  },
+  {
+   
+    "artist": "SM Sultan",
+    "title": "Rural Life",
+    "media": "Oil on Canvas",
+    "size": "24 in x 18 in",
+    "year": 1978,
+    "price": "BDT 20000",
+    "stockCode": "SM006",
+    "photoUrl": "https://i.ibb.co.com/dGBc0R4/auction6.jpg"
+  },
+  {
+   
+    "artist": "Kalidas Karmakar",
+    "title": "Modern Art",
+    "media": "Mixed Media",
+    "size": "20 in x 20 in",
+    "year": 1990,
+    "price": "BDT 17000",
+    "stockCode": "KK007",
+    "photoUrl": "https://i.ibb.co.com/R7Nk24K/auction7.jpg"
+  },
+  {
+   
+    "artist": "Hashem Khan",
+    "title": "Village Scene",
+    "media": "Oil on Canvas",
+    "size": "22 in x 18 in",
+    "year": 1980,
+    "price": "BDT 13000",
+    "stockCode": "HK008",
+    "photoUrl": "https://i.ibb.co.com/qYJYFPj/auction8.jpg"
+  },
+  {
+    
+    "artist": "Shahabuddin Ahmed",
+    "title": "Freedom Fighter",
+    "media": "Acrylic on Canvas",
+    "size": "24 in x 20 in",
+    "year": 1984,
+    "price": "BDT 18000",
+    "stockCode": "SA009",
+    "photoUrl": "https://i.ibb.co.com/6wHDy9t/auction9.jpg"
+  },
+  {
+   
+    "artist": "Kanak Chanpa Chakma",
+    "title": "Tribal Life",
+    "media": "Oil on Canvas",
+    "size": "18 in x 24 in",
+    "year": 2005,
+    "price": "BDT 14000",
+    "stockCode": "KC010",
+    "photoUrl": "https://i.ibb.co.com/p08633x/auction10.jpg"
+  }
+]

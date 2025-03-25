@@ -1,0 +1,32 @@
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+
+const PhotoBanner = () => {
+  const [PhotoBanner, setPhotoBanner] = useState([]);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/addNavbar`)
+
+      .then(res => res.json())
+      .then(data => setPhotoBanner(data));
+  }, []);
+
+  return (
+    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      {PhotoBanner.map((item, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={item.photoUrl} // Replace 'photoUrl' with the correct property from your API data
+            alt={`Slide ${index + 1}`}
+            className="w-full h-auto object-cover"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
+
+export default PhotoBanner;
