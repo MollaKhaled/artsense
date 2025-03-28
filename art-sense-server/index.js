@@ -13,10 +13,19 @@ const https = require('https');
 const fs = require('fs');
 const { Server } = require("socket.io");
 
+
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+
+// Load SSL certificates (replace these with actual paths)
+const privateKey = fs.readFileSync('/path/to/private.key', 'utf8');
+const certificate = fs.readFileSync('/path/to/certificate.crt', 'utf8');
+const ca = fs.readFileSync('/path/to/ca-certificates.pem', 'utf8');
+
+// Setup HTTPS credentials
+const credentials = { key: privateKey, cert: certificate, ca: ca };
 
 // Create HTTP server
 const expressServer = https.createServer(app);
