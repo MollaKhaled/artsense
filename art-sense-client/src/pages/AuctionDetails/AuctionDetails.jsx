@@ -10,7 +10,7 @@ import { io } from "socket.io-client";
 import useCart from "../../hooks/useCart";
 
 // Use the correct backend URL for Socket.IO
-const socket = io(import.meta.env.VITE_BACKEND_URL || "http://localhost:3000");
+// const socket = io(import.meta.env.VITE_BACKEND_URL || "http://localhost:3000");
 
 
 const AuctionDetails = () => {
@@ -61,25 +61,25 @@ const AuctionDetails = () => {
     fetchCurrentHighestBid();
   }, [lotId]);
 
-  useEffect(() => {
-    socket.on("updateBid", (bidData) => {
-      if (bidData.lotId === currentItem?.lotId) {
-        // Update the photos state with the new bid info
-        setPhotos((prevPhotos) => {
-          return prevPhotos.map((photo) =>
-            photo.lotId === bidData.lotId
-              ? { ...photo, bid: bidData.bidAmount }
-              : photo
-          );
-        });
-        incrementBidCount(); // Corrected bid count update
-      }
-    });
+  // useEffect(() => {
+  //   socket.on("updateBid", (bidData) => {
+  //     if (bidData.lotId === currentItem?.lotId) {
+  //       // Update the photos state with the new bid info
+  //       setPhotos((prevPhotos) => {
+  //         return prevPhotos.map((photo) =>
+  //           photo.lotId === bidData.lotId
+  //             ? { ...photo, bid: bidData.bidAmount }
+  //             : photo
+  //         );
+  //       });
+  //       incrementBidCount(); // Corrected bid count update
+  //     }
+  //   });
 
-    return () => {
-      socket.off("updateBid"); // Clean up listener on unmount
-    };
-  }, [currentItem, incrementBidCount]);
+  //   return () => {
+  //     socket.off("updateBid"); // Clean up listener on unmount
+  //   };
+  // }, [currentItem, incrementBidCount]);
 
 
 
@@ -155,7 +155,7 @@ const currentHighestBidValue = parseInt(currentHighestBid.toString().replace(/[^
         Swal.fire("Success", "Bid placed successfully!", "success");
 
         // Emit bid event to server
-        socket.emit("newBid", bidData);
+        // socket.emit("newBid", bidData);
 
         setSelectedBid(null);
         localStorage.removeItem("selectedBid");
