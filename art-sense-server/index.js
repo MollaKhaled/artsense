@@ -9,7 +9,8 @@ const nodemailer = require("nodemailer");
 const multer = require('multer');
 const path = require('path');
 const bodyParser = require('body-parser');
-const http = require('http');
+const https = require('https');
+const fs = require('fs');
 const { Server } = require("socket.io");
 
 // Middleware
@@ -18,7 +19,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // Create HTTP server
-const expressServer = http.createServer(app);
+const expressServer = https.createServer(app);
 
 // Initialize Socket.IO with the HTTP server
 let io = new Server(expressServer, {
